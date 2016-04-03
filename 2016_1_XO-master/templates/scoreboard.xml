@@ -1,0 +1,38 @@
+<fest:template xmlns:fest="http://fest.mail.ru" context_name="data">
+    <div class="b-page" id="scoreboard" >
+        <div class="b-page__header" id="header">
+            <h2>Scoreboard</h2>
+        </div>
+        <div class="b-board" id="board">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="g-center" data-field="id">
+                            <h4>Player</h4>
+                        </th>
+                        <th class="g-center" data-field="name">
+                            <h4>Score</h4>
+                        </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <fest:for iterate="data.scores" index="i" value="v">
+                        <tr>
+                            <td class="g-center">
+                                <h5><fest:value>v.name</fest:value></h5>
+                            </td>
+                            <td class="g-center">
+                                <h5><fest:value>v.score</fest:value></h5>
+                            </td>
+                        </tr>
+                    </fest:for>
+                </tbody>
+            </table>
+
+        </div>
+        <div class="b-row">
+            <a class="b-button" id="main" href="#">Main menu</a>
+        </div>
+    </div>
+</fest:template>

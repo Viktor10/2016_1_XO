@@ -1,0 +1,41 @@
+<fest:template xmlns:fest="http://fest.mail.ru">
+    <div id="register" class="b-page">
+        <div class="b-page__header" id="header">
+            <h2>Register</h2>
+        </div>
+        <form class="b-form__row" id="registerForm">
+            <div class="b-row">
+                <div class="input-field b-form__row">
+                    <p>Email</p>
+                    <input id="emailInput" type="email" placeholder="example@email.com"/>
+                    <span class="b-form__error" id="emailError"> </span>
+                </div>
+            </div>
+            <div class="b-row">
+                <div class="input-field b-form__row">
+                    <p>Login</p>
+                    <input id="loginInput" type="text" placeholder="1-16 symbols"/>
+                    <span class="b-form__error" id="loginError"> </span>
+                </div>
+            </div>
+            <div class="b-row">
+                <div class="input-field b-form__row">
+                    <p>Password</p>
+                    <input id="passwordInput" type="password" placeholder="1-16 symbols"/>
+                    <span class="b-form__error" id="passwordError"> </span>
+                </div>
+            </div>
+            <div class="b-row">
+                <button class="b-button g-float-left" type="submit" id="registerSubmit">
+                    Register
+                </button>
+                <a class="b-button g-float-right" id="main" href="#">Main menu</a>
+            </div>
+        </form>
+        <div class="b-shia-do-it">
+                <video width="960" height="540" autoplay="">
+
+                </video>
+        </div>
+    </div>
+</fest:template>
